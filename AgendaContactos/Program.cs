@@ -10,13 +10,13 @@ namespace AgendaContactos
     {
         static void Main(string[] args)
         {
-           //variables necesarias
+            //variables necesarias
             int opcion;
             string nombre;
             long numero;
 
             //instancia de la clase
-              Dictionary<string,long> contactos = new Dictionary<string,long>();
+            Dictionary<string, long> contactos = new Dictionary<string, long>();
             Console.Clear();
 
             do
@@ -92,14 +92,14 @@ namespace AgendaContactos
                             Console.ReadKey();
                         }
 
-                       break;
-                    
-                       case 4:
+                        break;
+
+                    case 4:
                         Console.WriteLine("\nContactos en la agenda:\n ");
                         foreach (KeyValuePair<string, long> elementos in contactos)
                         {
-                            Console.WriteLine("\n {0}; {1}: ",elementos.Key,elementos.Value);
-                         
+                            Console.WriteLine("\n {0}; {1}: ", elementos.Key, elementos.Value);
+
                         }
                         Console.WriteLine("Presiona cualquier tecla para regresar al menu: ");
                         Console.ReadKey();
@@ -109,8 +109,8 @@ namespace AgendaContactos
                 }
 
             }
-            while(opcion>= 1 && opcion<= 4  );
-             
+            while (opcion >= 1 && opcion <= 4);
+
 
         }
     }
